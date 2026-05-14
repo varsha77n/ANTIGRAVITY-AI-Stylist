@@ -1,0 +1,423 @@
+/* =====================================
+   SIDEBAR
+===================================== */
+
+#antigravity-sidebar {
+
+  position: fixed;
+
+  top: 0;
+  right: 0;
+
+  width: 390px;
+  height: 100vh;
+
+  background: #f7f7f7;
+
+  z-index: 999999;
+
+  overflow-y: auto;
+
+  box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+
+  font-family: Arial, sans-serif;
+
+  padding: 22px;
+
+  box-sizing: border-box;
+
+  transition: 0.3s ease;
+
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+#ag-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+
+}
+
+
+#ag-title {
+
+  font-size: 30px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+}
+
+
+#ag-status {
+
+  color: green;
+
+  font-weight: bold;
+
+  font-size: 16px;
+
+}
+
+
+/* =====================================
+   TOGGLE
+===================================== */
+
+#ag-toggle {
+
+  cursor: pointer;
+
+  font-size: 26px;
+
+  margin-right: 12px;
+
+}
+
+
+/* =====================================
+   TEXTAREA
+===================================== */
+
+#ag-textarea {
+
+  width: 100%;
+
+  height: 95px;
+
+  border-radius: 14px;
+
+  border: 1px solid #d0d0d0;
+
+  padding: 16px;
+
+  font-size: 16px;
+
+  resize: none;
+
+  box-sizing: border-box;
+
+  background: white;
+
+}
+
+
+/* =====================================
+   FILE UPLOAD
+===================================== */
+
+#ag-upload {
+
+  margin-top: 18px;
+
+}
+
+
+#ag-upload-status {
+
+  margin-top: 10px;
+
+  font-size: 14px;
+
+  color: green;
+
+  font-weight: bold;
+
+  line-height: 1.5;
+
+}
+
+
+/* =====================================
+   IMAGE PREVIEW
+===================================== */
+
+#ag-preview {
+
+  width: 100%;
+
+  border-radius: 16px;
+
+  margin-top: 18px;
+
+  display: none;
+
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+#ag-button {
+
+  width: 100%;
+
+  margin-top: 24px;
+
+  background: black;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 16px;
+
+  padding: 16px;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+
+/* =====================================
+   CARDS
+===================================== */
+
+.ag-section {
+
+  background: #ececec;
+
+  border-radius: 18px;
+
+  padding: 18px;
+
+  margin-top: 22px;
+
+}
+
+
+.ag-label {
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  margin-bottom: 14px;
+
+}
+
+
+.ag-output {
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #222;
+
+}
+
+
+/* =====================================
+   SHOP BUTTON
+===================================== */
+
+.ag-shop-btn {
+
+  width: 100%;
+
+  margin-top: 28px;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: #f6c547;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+
+/* =====================================
+   FLOATING TAB
+===================================== */
+
+#ag-floating-tab {
+
+  position: fixed;
+
+  top: 120px;
+
+  right: 0;
+
+  width: 50px;
+
+  height: 180px;
+
+  background: black;
+
+  color: white;
+
+  z-index: 999999999;
+
+  cursor: pointer;
+
+  border-radius: 14px 0 0 14px;
+
+  writing-mode: vertical-rl;
+
+  text-orientation: mixed;
+
+  display: none;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+}
+
+/* =====================================
+   DETECTED STYLE
+===================================== */
+
+.ag-detected-style {
+
+  background: linear-gradient(
+    135deg,
+    #111,
+    #2b2b2b
+  );
+
+  color: white;
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  margin-top: 24px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+
+.ag-detected-label {
+
+  font-size: 15px;
+
+  opacity: 0.8;
+
+  margin-bottom: 10px;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+}
+
+
+#ag-detected-output {
+
+  font-size: 26px;
+
+  font-weight: bold;
+
+  line-height: 1.4;
+
+}
+
+/* =====================================
+   AI CONFIDENCE
+===================================== */
+
+.ag-confidence-card {
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 18px;
+
+  margin-top: 18px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+
+.ag-confidence-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  font-weight: bold;
+
+  margin-bottom: 12px;
+
+  font-size: 15px;
+
+}
+
+
+#ag-confidence-score {
+
+  color: #111;
+
+  font-size: 18px;
+
+}
+
+
+.ag-confidence-bar {
+
+  width: 100%;
+
+  height: 12px;
+
+  background: #e5e5e5;
+
+  border-radius: 999px;
+
+  overflow: hidden;
+
+}
+
+
+#ag-confidence-fill {
+
+  height: 100%;
+
+  width: 0%;
+
+  background: linear-gradient(
+    90deg,
+    #00c853,
+    #69f0ae
+  );
+
+  border-radius: 999px;
+
+  transition: width 1s ease;
+
+}
